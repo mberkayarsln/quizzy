@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 
 const Check = (props) => {
 
@@ -9,14 +9,36 @@ const Check = (props) => {
     const inputArray = Array.from(document.getElementsByClassName("answer"))
 
     const changeColor = () => {
-        inputArray.forEach(input => {
-            correctAnswerText.forEach(correctAnswer => {
-                if (input.value === correctAnswer) {
-                    input.classList.add("correct")
+
+        let j = 0;
+        let k = 4;
+
+        for (let i = 0; i < 5; i++) {
+
+            let currentAnswer = correctAnswerText[i]
+
+            for (j; j < k; j++) {
+
+                if (inputArray[j].value === currentAnswer && inputArray[j].classList.contains("checked")) {
+                    inputArray[j].classList.add("correct")
                 }
-            })
-        })
+
+                else if(inputArray[j].value === currentAnswer && !inputArray[j].classList.contains("checked") ){
+                    inputArray[j].classList.add("empty")
+                }
+
+                else if(inputArray[j].value !== currentAnswer && inputArray[j].classList.contains("checked")){
+                    inputArray[j].classList.add("false")
+                }
+
+            }
+
+            k += 4;
+
+        }
+
     }
+
 
     return (
         <div className="check-div">
@@ -36,7 +58,9 @@ const Check = (props) => {
         </div>
     )
 
-
 }
+
+
+
 
 export default Check;

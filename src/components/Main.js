@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
 const Main = (props) => {
 
-    const { getAnswers, getCorrectAnswerText, text, correctAnswer, incorrectAnswers, id, index} = props;
+    const { getAnswers, getCorrectAnswerText, text, correctAnswer, incorrectAnswers, id, index } = props;
 
     const [inputArray, setInputArray] = useState([]);
 
@@ -29,17 +29,7 @@ const Main = (props) => {
         target.classList.add("checked")
 
         getAnswers(event)
-    }
-
-    const changeColor = () => {
-        inputArray.forEach(input => {
-            if (input.value === correctAnswer) {
-                input.classList.add("correct")
-            }
-            else {
-                input.classList.add("false")
-            }
-        })
+        
     }
 
     return (
