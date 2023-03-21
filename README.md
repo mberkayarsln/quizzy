@@ -22,8 +22,8 @@ You can **choose** your answers and **click** the "Check your answers!" button b
 
 ## Check answers
 
-Red shows **your incorrect** answers.
-Green shows **your correct** answers.
+Red shows **your incorrect** answers.<br/>
+Green shows **your correct** answers.<br/>
 Purple shows **correct** answers.
 
 <img src="https://i.ibb.co/Qmm1ngL/colors.gif" alt="site" border="0" width="300px">
