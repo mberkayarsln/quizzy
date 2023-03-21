@@ -26,8 +26,6 @@ Red shows **your incorrect** answers.<br/>
 Green shows **your correct** answers.<br/>
 Purple shows **correct** answers.<br/>
 
-<img src="https://i.ibb.co/Qmm1ngL/colors.gif" alt="site" border="0" width="300px">
-
-<hr/>
+<img src="https://i.ibb.co/x1jFw82/colors.gif" alt="color" border="0" width="300px">
 
 <h3>Hope you enjoy Quizzy!</h3>
