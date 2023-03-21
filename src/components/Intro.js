@@ -5,7 +5,7 @@ const Intro = (props) => {
     return (
         <div className='intro-page'>
 
-            <h1 className='intro-title'>Quiz App</h1>
+            <h1 className='intro-title'>Quizzy</h1>
 
             <span className='intro-desc'>Test yourself with random questions for fun!</span>
 

@@ -10,7 +10,7 @@ const Header = (props) => {
             <h1 className="header-title" onClick={() => {
                 handleStart()
                 restartQuiz()
-            }}>Quiz App</h1>
+            }}>Quizzy</h1>
 
             <div className="info">
                 <span className="info-span">{difficulty}</span>
