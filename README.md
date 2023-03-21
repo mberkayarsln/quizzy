@@ -16,7 +16,7 @@ How to choose your **category**  :
 
 ## Do the quiz
 
-You can **choose** your answers and **click** "Check your answers!" button when you are done.
+You can **choose** your answers and **click** the "Check your answers!" button by the time you are done.
 
 <img src="https://i.ibb.co/j30jMS2/site.gif" alt="site" border="0" width="300px">
 
