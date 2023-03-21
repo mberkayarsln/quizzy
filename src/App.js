@@ -48,6 +48,7 @@ const App = () => {
   const restartQuiz = () => {
     setQuiz({category:"arts_and_literature",difficulty:"easy"})
     setCategoryValue("Arts & Literature")
+    setCorrectAnswerText([])
   }
 
   const createQuiz = (event) => {

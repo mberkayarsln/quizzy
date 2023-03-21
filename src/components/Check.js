@@ -1,12 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Check = (props) => {
 
-    const { checkAnswers, handleStart, correct, restartQuiz, correctAnswerText } = props;
+    const { checkAnswers, handleStart, correct, restartQuiz } = props;
+    let { correctAnswerText } = props;
 
     const [refresh, setRefresh] = useState(false)
 
-    const inputArray = Array.from(document.getElementsByClassName("answer"))
+    const [inputArray, setInputArray] = useState()
+
+    useEffect(() => {
+        setInputArray(Array.from(document.getElementsByClassName("answer")))
+    }, [correctAnswerText])
+
+    console.log(correctAnswerText)
 
     const changeColor = () => {
 
@@ -23,20 +30,18 @@ const Check = (props) => {
                     inputArray[j].classList.add("correct")
                 }
 
-                else if(inputArray[j].value === currentAnswer && !inputArray[j].classList.contains("checked") ){
+                else if (inputArray[j].value === currentAnswer && !inputArray[j].classList.contains("checked")) {
                     inputArray[j].classList.add("empty")
                 }
 
-                else if(inputArray[j].value !== currentAnswer && inputArray[j].classList.contains("checked")){
+                else if (inputArray[j].value !== currentAnswer && inputArray[j].classList.contains("checked")) {
                     inputArray[j].classList.add("false")
                 }
 
             }
 
             k += 4;
-
         }
-
     }
 
 
